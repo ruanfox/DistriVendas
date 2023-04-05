@@ -1,0 +1,1922 @@
+2023-04-04 18:31:56 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php:722
+Stack trace:
+#0 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php(722): PDO->__construct()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#8 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#9 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#15 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#17 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#18 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#19 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#20 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#21 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php:648
+Stack trace:
+#0 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php(1067): yii\db\Connection->open()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/mysql/Schema.php(328): yii\db\Command->queryAll()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/mysql/Schema.php(133): yii\db\mysql\Schema->findColumns()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/db/Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#15 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#16 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#17 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#18 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#19 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2023-04-04 18:31:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1226,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1226'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '2729'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/b8c188dd_0c0b_40e3_8b08_69cd823144b8'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.84'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680633115.9756
+    'REQUEST_TIME' => 1680633115
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 19:41:40 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 19:41:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1226,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1226'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '2729'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/b8c188dd_0c0b_40e3_8b08_69cd823144b8'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.84'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680637300.208
+    'REQUEST_TIME' => 1680637300
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'm230404_183541_categoria'
+    ]
+    'argc' => 3
+]
+2023-04-04 19:43:06 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 19:43:06 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1226,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1226'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '2729'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/b8c188dd_0c0b_40e3_8b08_69cd823144b8'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.84'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680637386.0942
+    'REQUEST_TIME' => 1680637386
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'm230404_183541_categoria'
+    ]
+    'argc' => 3
+]
+2023-04-04 19:46:18 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 19:46:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1226,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1226'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '2729'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/b8c188dd_0c0b_40e3_8b08_69cd823144b8'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.84'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680637578.6064
+    'REQUEST_TIME' => 1680637578
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'm230404_183601_categoria'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:36:09 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:36:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644169.0639
+    'REQUEST_TIME' => 1680644169
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:37:02 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:37:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644222.1079
+    'REQUEST_TIME' => 1680644222
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:38:21 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:38:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644301.154
+    'REQUEST_TIME' => 1680644301
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:38:23 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:38:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644303.3154
+    'REQUEST_TIME' => 1680644303
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:39:15 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:39:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644355.0339
+    'REQUEST_TIME' => 1680644355
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:39:16 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:39:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644356.8665
+    'REQUEST_TIME' => 1680644356
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:40:02 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:40:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644402.0304
+    'REQUEST_TIME' => 1680644402
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:40:06 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:40:06 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644406.8785
+    'REQUEST_TIME' => 1680644406
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 21:40:41 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 21:40:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680644441.5547
+    'REQUEST_TIME' => 1680644441
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 22:37:44 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 22:37:44 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680647864.0227
+    'REQUEST_TIME' => 1680647864
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 22:39:47 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 22:39:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680647987.8467
+    'REQUEST_TIME' => 1680647987
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'm230404_183539_produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 22:40:06 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 22:40:06 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680648006.657
+    'REQUEST_TIME' => 1680648006
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'm230404_183539_produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 22:44:40 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 22:44:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs/trabalho/migrations'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680648280.8379
+    'REQUEST_TIME' => 1680648280
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/down'
+        2 => 'produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 23:09:50 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 23:09:49 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680649789.9701
+    'REQUEST_TIME' => 1680649789
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'produto'
+    ]
+    'argc' => 3
+]
+2023-04-04 23:10:03 [-][-][-][error][yii\console\Exception] yii\console\Exception: The step argument must be greater than 0. in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:256
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionDown()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#8 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#9 {main}
+2023-04-04 23:10:03 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/44d3c80d_04a9_4cf9_abe9_30b00a109b69'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680649803.3147
+    'REQUEST_TIME' => 1680649803
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/down'
+        2 => 'pessoa'
+    ]
+    'argc' => 3
+]
+2023-04-04 23:14:07 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class "m230404_183539_produto" does not exist in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/MigrateController.php(202): yii\BaseYii::createObject()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#8 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#16 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "m230404_183539_produto". in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/MigrateController.php(202): yii\BaseYii::createObject()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#15 {main}
+2023-04-04 23:14:01 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/a9b85e38_2ba4_4343_b590_cca06eb4296d'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680650041.7745
+    'REQUEST_TIME' => 1680650041
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2023-04-04 23:16:32 [-][-][-][error][yii\di\NotInstantiableException] ReflectionException: Class "m230404_183539_produto" does not exist in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/MigrateController.php(202): yii\BaseYii::createObject()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#6 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#8 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#9 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#11 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#12 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#13 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#14 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#15 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#16 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "m230404_183539_produto". in /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies()
+#1 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build()
+#2 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#3 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/MigrateController.php(202): yii\BaseYii::createObject()
+#4 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(757): yii\console\controllers\MigrateController->createMigration()
+#5 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(216): yii\console\controllers\BaseMigrateController->migrateUp()
+#6 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#7 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /opt/lampp/htdocs/trabalho/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /opt/lampp/htdocs/trabalho/yii(20): yii\base\Application->run()
+#15 {main}
+2023-04-04 23:16:27 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/ruan-Inspiron-3421:@/tmp/.ICE-unix/1122,unix/ruan-Inspiron-3421:/tmp/.ICE-unix/1122'
+    'QT_ACCESSIBILITY' => '1'
+    'COLORTERM' => 'truecolor'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-cinnamon:/etc/xdg'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'no_proxy' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LANGUAGE' => 'pt_BR:pt:en'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'DESKTOP_SESSION' => 'cinnamon'
+    'GTK_MODULES' => 'gail:atk-bridge'
+    'PWD' => '/opt/lampp/htdocs/trabalho'
+    'XDG_SESSION_DESKTOP' => 'cinnamon'
+    'LOGNAME' => 'ruan'
+    'QT_QPA_PLATFORMTHEME' => 'qt5ct'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1'
+    'SYSTEMD_EXEC_PID' => '1788'
+    'XAUTHORITY' => '/home/ruan/.Xauthority'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/ruan'
+    'GDM_LANG' => 'pt_BR'
+    'HOME' => '/root'
+    'IM_CONFIG_PHASE' => '1'
+    'LANG' => 'pt_BR.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_CURRENT_DESKTOP' => 'X-Cinnamon'
+    'VTE_VERSION' => '6800'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/a9b85e38_2ba4_4343_b590_cca06eb4296d'
+    'NVM_DIR' => '/home/ruan/.nvm'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'GTK_OVERLAY_SCROLLING' => '1'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'USER' => 'ruan'
+    'NO_PROXY' => 'localhost,127.0.0.0/8,::1'
+    'GNOME_TERMINAL_SERVICE' => ':1.72'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'GTK3_MODULES' => 'xapp-gtk3-module'
+    'XDG_DATA_DIRS' => '/usr/share/cinnamon:/usr/share/gnome:/home/ruan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'
+    'PATH' => '/home/ruan/.nvm/versions/node/v18.15.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'GDMSESSION' => 'cinnamon'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'MAIL' => '/var/mail/root'
+    'NVM_BIN' => '/home/ruan/.nvm/versions/node/v18.15.0/bin'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1680650187.5709
+    'REQUEST_TIME' => 1680650187
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
